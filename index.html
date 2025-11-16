@@ -250,115 +250,6 @@
       margin: auto;
     }
 
-    /* Mobile Responsive Fixes */
-    @media (max-width: 768px) {
-      .nav-links {
-        display: none;
-      }
-
-      .hamburger {
-        display: flex;
-      }
-
-      .hero h1 {
-        font-size: 2.2rem;
-        margin-bottom: 15px;
-      }
-
-      .hero p {
-        font-size: 1.1rem;
-        margin-bottom: 25px;
-      }
-
-      .hero-buttons {
-        flex-direction: column;
-        align-items: center;
-        gap: 10px;
-      }
-
-      .cta-button {
-        width: 100%;
-        max-width: 280px;
-        padding: 12px 25px;
-        font-size: 1rem;
-      }
-
-      .nav-container {
-        padding: 0 15px;
-      }
-
-      /* Services Grid Fix */
-      .services {
-        grid-template-columns: 1fr;
-        gap: 20px;
-      }
-
-      .service-box {
-        padding: 20px 15px;
-      }
-
-      /* Packages Grid Fix */
-      .packages {
-        grid-template-columns: 1fr;
-        gap: 20px;
-      }
-
-      .package {
-        margin-bottom: 20px;
-      }
-
-      /* Button Stack Fix */
-      .tour-buttons {
-        flex-direction: column;
-        gap: 8px;
-      }
-
-      .more-details, .book-now, .btn-contact {
-        width: 100%;
-        text-align: center;
-        padding: 12px;
-      }
-
-      /* Dubai Tours Grid Fix */
-      .dubai-tours-grid {
-        grid-template-columns: 1fr;
-        gap: 20px;
-      }
-
-      /* About Section Fix */
-      .about-content {
-        grid-template-columns: 1fr;
-        gap: 30px;
-      }
-
-      .section-title h2 {
-        font-size: 1.8rem;
-      }
-
-      /* Contact Form Fix */
-      .whatsapp-contact {
-        grid-template-columns: 1fr;
-      }
-    }
-
-    @media (max-width: 480px) {
-      .hero h1 {
-        font-size: 1.8rem;
-      }
-
-      .hero p {
-        font-size: 1rem;
-      }
-
-      section {
-        padding: 40px 15px;
-      }
-
-      .service-box, .package {
-        padding: 15px;
-      }
-    }
-
     .services {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -751,6 +642,126 @@
       position: absolute;
       left: 0;
     }
+
+    /* Mobile Responsive Fixes */
+    @media (max-width: 768px) {
+      .nav-links {
+        display: none;
+      }
+
+      .hamburger {
+        display: flex;
+      }
+
+      .hero h1 {
+        font-size: 2.2rem;
+        margin-bottom: 15px;
+      }
+
+      .hero p {
+        font-size: 1.1rem;
+        margin-bottom: 25px;
+      }
+
+      .hero-buttons {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+      }
+
+      .cta-button {
+        width: 100%;
+        max-width: 280px;
+        padding: 12px 25px;
+        font-size: 1rem;
+      }
+
+      .nav-container {
+        padding: 0 15px;
+      }
+
+      /* Services Grid Fix */
+      .services {
+        grid-template-columns: 1fr;
+        gap: 20px;
+      }
+
+      .service-box {
+        padding: 20px 15px;
+      }
+
+      /* Packages Grid Fix */
+      .packages {
+        grid-template-columns: 1fr;
+        gap: 20px;
+      }
+
+      .package {
+        margin-bottom: 20px;
+      }
+
+      /* Button Stack Fix */
+      .tour-buttons {
+        flex-direction: column;
+        gap: 8px;
+      }
+
+      .more-details, .book-now, .btn-contact {
+        width: 100%;
+        text-align: center;
+        padding: 12px;
+      }
+
+      /* Dubai Tours Grid Fix */
+      .dubai-tours-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+      }
+
+      /* About Section Fix */
+      .about-content {
+        grid-template-columns: 1fr;
+        gap: 30px;
+      }
+
+      .section-title h2 {
+        font-size: 1.8rem;
+      }
+
+      /* Contact Form Fix - WhatsApp form now appears below */
+      .whatsapp-contact {
+        grid-template-columns: 1fr;
+        gap: 20px;
+      }
+      
+      /* Ensure form comes after contact info on mobile */
+      .contact-info {
+        order: 1;
+      }
+      
+      .whatsapp-form {
+        order: 2;
+        margin-top: 0;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .hero h1 {
+        font-size: 1.8rem;
+      }
+
+      .hero p {
+        font-size: 1rem;
+      }
+
+      section {
+        padding: 40px 15px;
+      }
+
+      .service-box, .package {
+        padding: 15px;
+      }
+    }
   </style>
 </head>
 
@@ -795,6 +806,7 @@
     <p>Experience the world's most breathtaking destinations with luxury travel packages tailored just for you.</p>
     <div class="hero-buttons">
       <a href="#packages" class="cta-button">Explore Packages</a>
+      <a href="#contact" class="cta-button" style="background: transparent; color: #F5C518; border: 2px solid #F5C518;">Contact Us</a>
     </div>
   </div>
   <a href="#services" class="hero-scroll" aria-label="Scroll down">
@@ -938,10 +950,10 @@
         <h3>Get in Touch</h3>
         <div class="contact-details">
           <p><i class="fas fa-phone"></i> +971 52 484 9895</p>
-          <p><i class="fas fa-phone-alt"></i> +971 6 715 1752 (Office)</p>
+          <p><i class="fas fa-phone-alt"></i> +971 4 123 4567 (Office)</p>
           <p><i class="fas fa-envelope"></i> travelpathtourismllc@gmail.com</p>
           <p><i class="fas fa-globe"></i> www.travelpathtourism.com</p>
-          <p><i class="fas fa-map-marker-alt"></i> Sharjah, UAE</p>
+          <p><i class="fas fa-map-marker-alt"></i> Dubai, UAE</p>
         </div>
         <p>Prefer to chat directly? Click below:</p>
         <a href="https://wa.me/971524849895" target="_blank" class="whatsapp-btn">
@@ -1092,4 +1104,3 @@
 </script>
 </body>
 </html>
-
